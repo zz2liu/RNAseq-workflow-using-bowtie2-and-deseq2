@@ -1,5 +1,5 @@
-# RNAseq-workflow-using-bowtie2-and-deseq2
-A RNA-seq workflow using bowtie2 for alignment and deseq2 for differential expression.
+# bowtie2Deseq: A RNAseq workflow using bowtie2 and DESeq2
+A RNA-seq workflow using Bowtie2 for alignment and Deseq2 for differential expression.
 
 The workflow including the following major steps:
 * Align all the R1 reads to the genome with bowtie2 in local mode
@@ -37,9 +37,12 @@ Requirements: This workflow have been tested on linux environment, it will proba
     An example file can be found in {installDir}
      
 ## from the {installDir},
+  * Activate the environment: `source activate bowtie2Deseq`
   * test by `snakeMake -d {workDir} -n`
   * run the pipeline by `snakeMake -d {workDir}`
-  * or run the pipeline parallelly on a cluster by `snakeSlurm -d {workDir}`
+ 
+ Tip: if you are working on a HPC cluster with slurm scheduler, you can run the pipeline parallelly
+ ```snakeSlurm -d {workDir}```
 
 # Output
 The output files are generated in your {workDir}:
@@ -47,4 +50,6 @@ The output files are generated in your {workDir}:
 * {genome}.gene_count/: the gene count matrix (gene x sample), the mapping and count summary (...)
 * {genome}.deseq2/: the differential expression for each contrast.
 
-  
+# FAQS
+## I heard of Tophat, HISAT and STAR for RNA-seq mapping, is Bowtie2 a solid option?
+## My data is pair-ended, why this pipeline only take half of the reads (R1 reads)?
