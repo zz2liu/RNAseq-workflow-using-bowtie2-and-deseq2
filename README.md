@@ -10,7 +10,7 @@ The workflow including the following major steps:
 Requirements: This workflow have been tested on linux environment, it will probably also work on Mac OS and Windows 10 (via the integrated linux subsystem).
 
 * Download and extract this package to a folder {installDir}. 
-* Install anaconda3
+* Install the Python3 version of [Anaconda](https://www.anaconda.com/download)
 * From {installDir}, install other external tools using anaconda
 ```conda env create -f environment.yml```
 
