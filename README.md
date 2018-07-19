@@ -19,9 +19,17 @@ Requirements: This workflow have been tested on linux environment, it will proba
   * genes.gtf: cound be downloaded from GENCODE using `___`
   * Bowtie2Index/: optional, can be automatically generated (if necessary) while running the workflow.
 
+* To test you installation, go to {installDir} and run
+```source activate bowtie2Deseq
+snakeMake -d tests
+```
+
 # Usage
 ## Prepare a work folder {workDir} with
   * input/: with row sequence files, each sample as a folder of fastq(.gz) files.
+  
+  An example input folder can be found in {installDir}/tests
+  
   * sampleInfo.csv: a comma seperated file with the following columns
     * sample: the sample folder name
     * group: the smaple group name, used to make your contrasts for differential expression
