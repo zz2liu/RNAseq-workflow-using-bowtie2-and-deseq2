@@ -30,7 +30,7 @@ snakeMake -d tests
 ## Prepare a work folder {workDir} with
   * input/: with row sequence files, each sample as a folder of fastq(.gz) files.
   
-  An example input folder can be found in {installDir}/tests
+    An example input folder can be found in {installDir}/tests
   
   * sampleInfo.csv: a comma seperated file with the following columns
     * sample: the sample folder name
@@ -51,7 +51,7 @@ snakeMake -d tests
   * test by `snakeMake -d {workDir} -n`
   * run the pipeline by `snakeMake -d {workDir}`
  
- Tip: if you are working on a HPC cluster with slurm scheduler, you can run the pipeline parallelly
+   Tip: if you are working on a HPC cluster with slurm scheduler, you can run the pipeline parallelly
  ```snakeSlurm -d {workDir}```
 
 # Output
