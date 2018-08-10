@@ -22,9 +22,11 @@ Requirements: This workflow have been tested on linux environment, it will proba
   * Bowtie2Index/: optional, can be automatically generated (if necessary) while running the workflow.
 
 * To test you installation, go to {installDir} and run
-```source activate bowtie2Deseq
-snakeMake -d tests
-```
+
+  ```
+  source activate bowtie2Deseq
+  snakeMake -d tests
+  ```
 
 # Usage
 ## Prepare a work folder {workDir} with
