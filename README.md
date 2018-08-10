@@ -6,6 +6,8 @@ The workflow including the following major steps:
 * Count the aligned reads to annotated genes with featureCounts
 * Performed differential gene expression with DESeq2
 
+_Note: code to be submitted._
+
 # Installation
 Requirements: This workflow have been tested on linux environment, it will probably also work on Mac OS and Windows 10 (via the integrated linux subsystem).
 
